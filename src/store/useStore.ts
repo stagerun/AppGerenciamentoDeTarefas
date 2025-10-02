@@ -48,7 +48,7 @@ export const useStore = create<AppState>()((set, get) => ({
       projects: mockProjects,
       tasks: mockTasks,
       notifications: mockNotifications,
-      sidebarOpen: true,
+      sidebarOpen: false,
       theme: 'light',
       
       // User actions

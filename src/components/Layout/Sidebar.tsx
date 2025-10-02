@@ -46,7 +46,7 @@ export default function Sidebar() {
       {/* Sidebar */}
       <div
         className={clsx(
-          'fixed inset-y-0 left-0 z-50 w-64 sidebar transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 lg:block',
+          'fixed inset-y-0 left-0 z-50 w-64 bg-white dark:bg-gray-800 sidebar transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 lg:block',
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         )}
       >
