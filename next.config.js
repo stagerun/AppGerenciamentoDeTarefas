@@ -4,29 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   
-  // Configurações para PWA
-  async headers() {
-    return [
-      {
-        source: '/manifest.json',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'application/manifest+json',
-          },
-        ],
-      },
-      {
-        source: '/sw.js',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'application/javascript',
-          },
-        ],
-      },
-    ]
-  },
+  // A seção async headers() FOI REMOVIDA AQUI!
 }
 
 module.exports = nextConfig
