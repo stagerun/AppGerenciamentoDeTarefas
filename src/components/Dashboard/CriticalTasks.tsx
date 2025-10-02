@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useStore } from '@/store/useStore';
-import { AlertTriangle, Clock, Flag, Calendar } from 'lucide-react';
+import { AlertTriangle, Clock, Flag, Calendar, CheckCircle } from 'lucide-react';
 import { format, isAfter, isBefore, addDays } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import Avatar from '@/components/Avatar';
