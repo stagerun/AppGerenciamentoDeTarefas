@@ -163,7 +163,7 @@ export default function RecentActivity() {
                             src={activity.user.avatar}
                             alt={activity.user.name}
                             className="w-5 h-5 rounded-full"
-                            fallback={activity.user.name.split(' ').map(n => n[0]).join('').toUpperCase()}
+                            fallback={activity.user.name.split(' ').map((n: string) => n[0]).join('').toUpperCase()}
                           />
                           <span className="text-xs text-gray-500 dark:text-gray-400">
                             {activity.user.name}

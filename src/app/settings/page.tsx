@@ -107,7 +107,7 @@ export default function SettingsPage() {
                       src={user?.avatar || ''}
                       alt={user?.name || ''}
                       className="w-20 h-20 rounded-full"
-                      fallback={user?.name?.split(' ').map(n => n[0]).join('').toUpperCase()}
+                      fallback={user?.name?.split(' ').map((n: string) => n[0]).join('').toUpperCase()}
                     />
                     <div>
                       <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">

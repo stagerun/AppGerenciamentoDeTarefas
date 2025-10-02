@@ -138,7 +138,7 @@ export default function Header() {
                 src={user?.avatar || ''}
                 alt={user?.name || ''}
                 className="w-8 h-8 rounded-full"
-                fallback={user?.name?.split(' ').map(n => n[0]).join('').toUpperCase()}
+                fallback={user?.name?.split(' ').map((n: string) => n[0]).join('').toUpperCase()}
               />
               <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-100">
                 {user?.name}

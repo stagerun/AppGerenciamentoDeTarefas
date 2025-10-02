@@ -141,7 +141,7 @@ export default function TeamsPage() {
                     src={user.avatar}
                     alt={user.name}
                     className="w-16 h-16 rounded-full"
-                    fallback={user.name.split(' ').map(n => n[0]).join('').toUpperCase()}
+                    fallback={user.name.split(' ').map((n: string) => n[0]).join('').toUpperCase()}
                   />
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">

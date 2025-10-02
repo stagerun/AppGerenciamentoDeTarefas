@@ -77,7 +77,7 @@ export default function Sidebar() {
                   src={user.avatar}
                   alt={user.name}
                   className="w-10 h-10 rounded-full"
-                  fallback={user.name.split(' ').map(n => n[0]).join('').toUpperCase()}
+                  fallback={user.name.split(' ').map((n: string) => n[0]).join('').toUpperCase()}
                 />
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">

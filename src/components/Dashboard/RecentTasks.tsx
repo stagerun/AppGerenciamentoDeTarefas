@@ -86,7 +86,7 @@ export default function RecentTasks({ tasks, users }: RecentTasksProps) {
                       src={assignee.avatar}
                       alt={assignee.name}
                       className="w-6 h-6 rounded-full"
-                      fallback={assignee.name.split(' ').map(n => n[0]).join('').toUpperCase()}
+                      fallback={assignee.name.split(' ').map((n: string) => n[0]).join('').toUpperCase()}
                     />
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       {assignee.name}
